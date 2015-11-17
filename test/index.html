@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="css/uniform.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.js"></script>
+    <script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/GARAalgo.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    
+</head>
+<body>
+
+<div class="TTWForm-container">
+     
+     
+     <div id="form-title" class="form-title field">
+          <h2>
+               Enter the following to receive your G-Score:
+          </h2>
+     </div>
+     
+     
+     <form id='userForm' action="validate_form.php" class="TTWForm ui-sortable-disabled js-ajax-php-json" method="post"
+     novalidate="" accept-charset="utf-8">
+          
+          
+          <div id="field3-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field3">
+                    Your name:
+               </label>
+               <input type="text" name="field3"   id="field3" required="required">
+          </div>
+          
+          
+          <div id="field4-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field4">
+                    Your Email:
+               </label>
+               <input type="email" name="field4"   id="field4" required="required">
+          </div>
+          
+          
+          <div id="field5-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field5">
+                    Weekly Radio Plays:
+               </label>
+               <input type="number" name="field5"  id="field5" required="required" min="0"
+               max="10000000">
+          </div>
+          
+          
+          <div id="field6-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field6">
+                    YouTube/Vevo Subscribers:
+               </label>
+               <input type="number" name="field6" id="field6"  required="required" min="0"
+               max="1000000000">
+          </div>
+          
+          
+          <div id="field7-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field7">
+                    Total Records Sold:
+               </label>
+               <input type="number" name="field7" id="field7"  required="required" min="0"
+               max="100000000">
+          </div>
+          
+          
+          <div id="field9-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field9">
+                    Are You Signed to a Major Label?
+               </label>
+               <select name="field9" id="field9" required="required">
+                    <option id="field9-1" value="Yes">
+                         Yes
+                    </option>
+                    <option id="field9-2" value="No">
+                         No
+                    </option>
+               </select>
+          </div>
+          
+          
+          <div id="field10-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field10">
+                    Songs Currently on Billboard Charts:
+               </label>
+               <input type="number" name="field10" id="field10"  required="required" min="0"
+               max="100">
+          </div>
+          
+          
+          <div id="field11-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field11">
+                    Average Chart Position
+               </label>
+               <input type="number" name="field11" id="field11"  min="1" max="200">
+          </div>
+          
+          
+          <div id="field12-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field12">
+                    Twitter Followers:
+               </label>
+               <input type="number" name="field12" id="field12"  required="required" min="0"
+               max="100000000">
+          </div>
+          
+          
+         <div id="field13-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field13">
+                    Facebook Fans:
+               </label>
+               <input type="number" name="field13" id="field13"   required="required" min="0"
+               max="10000000">
+          </div>
+
+          <div id="field14-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field14">
+                    Soundcloud Followers:
+               </label>
+               <input type="number" name="field14" id="field14"   required="required" min="0"
+               max="10000000">
+          </div>
+          
+          
+          <div id="field15-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field15">
+                    Venue shows per year:
+               </label>
+               <input type="number" name="field15" id="field15"  required="required" min="0"
+               max="10000">
+          </div>
+          
+          
+          <div id="field16-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field16">
+                    Press articles in past 12 months:
+               </label>
+               <input type="number" name="field16" id="field16"  required="required" min="0"
+               max="1000">
+          </div>
+          
+          
+          <div id="field17-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field17">
+                    TV Appearances past 12 months:
+               </label>
+               <input type="number" name="field17" id="field17"  required="required" min="0"
+               max="1000">
+          </div>
+          
+          
+          <div id="field18-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field18">
+                    Paid Product Endorsements:
+               </label>
+               <input type="number" name="field18" id="field18"  required="required" min="1"
+               max="1000">
+          </div>
+          
+          
+          <div id="field19-container" class="field f_100 ui-resizable-disabled ui-state-disabled">
+               <label for="field19">
+                    Artist Co-Signs:
+               </label>
+               <input type="number" name="field19" id="field19"  required="required" min="0"
+               max="100">
+          </div>
+
+          <div id="form-submit" class="field f_100 clearfix submit">
+                <input type="submit"  class="btn btn-lg btn-primary btn-block" name="submit" value="Receive your G-Score">
+          </div>
+
+          <input type="hidden"  name="gScore" id="gScore" min="1" max="800"> 
+
+     </form>
+
+<!-- where the response will be displayed -->
+    <div id='response' class="field f_100 ui-resizable-disabled ui-state-disabled">
+         <h2>
+         Your G-Score will be displayed here when validation is complete.
+         </h2>
+
+     </div>
+
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+<script>
+$(document).ready(function(){
+    $('#userForm').submit(function(){
+     
+        // show that something is loading
+        $('#response').html("<b>Loading response...</b>");
+         
+        /*
+         * 'post_receiver.php' - where you will pass the form data
+         * $(this).serialize() - to easily read form data
+         * function(data){... - data contains the response from post_receiver.php
+         */
+        $.ajax({
+            type: 'POST',
+            url: 'post_receiver.php', 
+            data: $(this).serialize()
+            //data: {gScore}
+        })
+        .done(function(data){
+             
+            // show the response
+            $('#response').html(data);
+             
+        })
+        .fail(function() {
+         
+            // just in case posting your form failed
+            alert( "Posting failed." );
+             
+        });
+ 
+        // to prevent refreshing the whole page 
+        return false;
+ 
+    });
+});
+</script>
+
+
+</div>
+
+ 
+</body>
+</html>
